@@ -44,7 +44,7 @@ body{
 }
 .wrapper{
 	border: 1px solid white;
-	width: 100%;
+	max-width: 390px;
 	height: 400px;
 }
 .text{
