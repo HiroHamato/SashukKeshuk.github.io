@@ -81,9 +81,10 @@ btn6.addEventListener("click", function(){
 });
 
 
-//Telegram.WebApp.onEvent("mainButtonClicked", function(){
+Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	tg.sendData(1);
-//});
+	alert(1);
+});
 
 //let usercard = document.getElementById("usercard");
 
