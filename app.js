@@ -81,9 +81,9 @@ btn6.addEventListener("click", function(){
 });
 
 
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData(item);
-});
+//Telegram.WebApp.onEvent("mainButtonClicked", function(){
+	tg.sendData(1);
+//});
 
 let usercard = document.getElementById("usercard");
 
