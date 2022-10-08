@@ -5,7 +5,7 @@ tg.expand();
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
 
-let item = "";
+let item;
 
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
@@ -85,15 +85,15 @@ btn6.addEventListener("click", function(){
 	tg.sendData(1);
 //});
 
-let usercard = document.getElementById("usercard");
+//let usercard = document.getElementById("usercard");
 
-let p = document.createElement("p");
+//let p = document.createElement("p");
 
-p.innerText = `${tg.initDataUnsafe.user.first_name}
-${tg.initDataUnsafe.user.last_name}`;
+//p.innerText = `${tg.initDataUnsafe.user.first_name}
+//${tg.initDataUnsafe.user.last_name}`;
 
 
-usercard.appendChild(p); 
+//usercard.appendChild(p);
 
 
 
