@@ -1,50 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
 	margin: 0;
 	padding: 0;
+	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
-	color: var(--tg-theme-text-color);
-	background: var(--tg-theme-bg-color);
+/*	color: var(--tg-theme-text-color);
+	background: var(--tg-theme-bg-color);*/
 }
 
 .container {
+	color: white;
+	background: #17212B;
 	max-width: 390px;
+	height: 550px;
 }
 
-.inner {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 200px 200px 200px;
+.inner{
+	max-width: 390px;
+	height: 550px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
-.img {
-	width: 130px;
+.inner2{
+	max-width: 390px;
+	height: 550px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
-.item {
+.title1, .title2, .title3, .title4{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.line1, .line2, .line3{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.btn1, .btn2{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 60%;
+	margin-left: 50%;
+	transform: translate(-50%);
 	text-align: center;
 }
+.line3 div{
+	margin: 5px 0;
+	width: 70px;
+}
 
-.btn {
-	display: inline-block;
-	padding: 10px 20px;
-	border: none;
-	background: rgb(248, 168, 24);
+.top{
+	padding-top: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	height: 30px;
+}
+.p1, .p2{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+.white{
+	margin-left: 50%;
+	transform: translate(-50%);
+	width: 80%;
+	padding: 0 10px;
 	border-radius: 10px;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 700;
-
-	transition: background .2s linear;
+	height: 3px;
+	background: white;
 }
-
-.btn:hover {
-	background: lightgreen;
-}
-
-.usercard {
+.btn3, .btn4{
+	padding-top: 3px;
+	background: #5288C1;
 	text-align: center;
+	width: 46%;
+	border-radius: 5px;
 }
-
+.btn3:hover, .btn4:hover{
+	background: #395F87;
+}
+.btn1{
+	padding: 5px;
+	background: #5288C1;
+	border-radius: 100px;
+}
+.btn1:hover{
+	background: #395F87;
+}
+.btn2{
+	padding: 5px;
+	background: #783284;
+	border-radius: 100px;
+}
+.btn2:hover{
+	background: #54235C;
+}
+.chx{
+	background: blue;
+}
+.move1{
+	transition: 0.5s ease all;
+	transform: translate(-100%);
+}
+#spn{
+	opacity: 0;
+}
+.slider{
+	margin-right: 50%;
+	margin-left: 50%;
+}
 /*
 var(--tg-theme-bg-color)
 var(--tg-theme-text-color)
