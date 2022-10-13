@@ -125,6 +125,11 @@ img{
 	margin-right: 50%;
 	margin-left: 50%;
 }
+.btn1 img, .btn2 img{
+	margin-top: 5px !important;
+	margin-left: 2px !important;
+	filter: invert(100%);
+}
 /*
 var(--tg-theme-bg-color)
 var(--tg-theme-text-color)
