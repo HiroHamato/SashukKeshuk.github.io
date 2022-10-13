@@ -6,6 +6,7 @@ tg.expand();
 btn1 = document.getElementById('btn3');
 btn2 = document.getElementById('btn4');
 
+let cost_from,cost_to;
 
 $("#slider2").ionRangeSlider({
     type: "double",
@@ -16,8 +17,8 @@ $("#slider2").ionRangeSlider({
     to: 550000,
     step: 1000,
     onFinish: function (data) {
-         /*  console.log ('Начальное значение:' + data.from)
-           console.log ('Конечное значение:' + data.from)*/
+    		cost_from=data.from;
+    		cost_to=data.to;
     },
 
 });
@@ -31,8 +32,8 @@ $("#slider1").ionRangeSlider({
     to: 1236000,
     step: 1000,
     onFinish: function (data) {
-         /*  console.log ('Начальное значение:' + data.from)
-           console.log ('Конечное значение:' + data.from)*/
+    		cost_from=data.from;
+    		cost_to=data.to;
     },
 
 });
@@ -68,6 +69,7 @@ function SendData(){
 	if (active==1)
 	{
 		data+='new_building ';
+		data+=cost_from+' '+cost_to+' ';
 		if (document.getElementById("el1").checked==1) data+='Alanya ';
 		if (document.getElementById("el2").checked==1) data+='Istanbul ';
 		if (document.getElementById("el3").checked==1) data+='Antalya ';
@@ -85,6 +87,7 @@ function SendData(){
 		if (document.getElementById("el15").checked==1) data+='7+1 ';
 	} else {
 		data+='from_the_owner ';
+		data+=cost_from+' '+cost_to+' ';
 		if (document.getElementById("ell1").checked==1) data+='Alanya ';
 		if (document.getElementById("ell2").checked==1) data+='apartment ';
 		if (document.getElementById("ell3").checked==1) data+='villa ';
@@ -93,5 +96,5 @@ function SendData(){
 		if (document.getElementById("ell6").checked==1) data+='3+1 ';
 	}
 	console.log(data);
-	tg.SendData(data);
+	tg.sendData(data);
 }

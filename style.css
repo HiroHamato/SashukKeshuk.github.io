@@ -103,6 +103,11 @@ body {
 	background: #783284;
 	border-radius: 100px;
 }
+img{
+	height: 20px;
+	width: 20px;
+	margin-left: 2px;
+}
 .btn2:hover{
 	background: #54235C;
 }
