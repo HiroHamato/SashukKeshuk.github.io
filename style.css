@@ -16,6 +16,11 @@ body {
 	height: 550px;
 }
 
+.sliderr{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
 .inner{
 	max-width: 390px;
 	height: 550px;
@@ -124,11 +129,6 @@ img{
 .slider{
 	margin-right: 50%;
 	margin-left: 50%;
-}
-.btn1 img, .btn2 img{
-	margin-top: 5px !important;
-	margin-left: 2px !important;
-	filter: invert(100%);
 }
 /*
 var(--tg-theme-bg-color)

@@ -6,7 +6,7 @@ tg.expand();
 btn1 = document.getElementById('btn3');
 btn2 = document.getElementById('btn4');
 
-let cost_from = 94000,cost_to = 1236000;
+let cost_from,cost_to;
 
 $("#slider2").ionRangeSlider({
     type: "double",
@@ -16,6 +16,7 @@ $("#slider2").ionRangeSlider({
     from: 125000,
     to: 550000,
     step: 1000,
+	postfix: '€',
     onFinish: function (data) {
     		cost_from=data.from;
     		cost_to=data.to;
@@ -31,6 +32,7 @@ $("#slider1").ionRangeSlider({
     from: 94000,
     to: 1236000,
     step: 1000,
+	postfix: '€',
     onFinish: function (data) {
     		cost_from=data.from;
     		cost_to=data.to;
@@ -40,7 +42,7 @@ $("#slider1").ionRangeSlider({
 
 active = 1;
 $(".inner").appendTo($(".container"));
-let p = $(".inner2");
+let p = $(".inner2").detach();
 
 
 function ChangeTo2(){
