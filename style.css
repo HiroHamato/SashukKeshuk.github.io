@@ -26,6 +26,7 @@ body {
 .inner{
 	max-width: 390px;
 	height: 80%;
+	min-height: 550px;
 	display: flex;
 	margin:auto;
 	flex-direction: column;
@@ -36,6 +37,7 @@ body {
 .inner2{
 	max-width: 390px;
 	height: 80%;
+	min-height: 550px;
 	display: flex;
 	margin:auto;
 	width: 80%;
