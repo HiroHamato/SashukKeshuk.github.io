@@ -5,15 +5,17 @@ body {
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
-/*	color: var(--tg-theme-text-color);
-	background: var(--tg-theme-bg-color);*/
+/*	color: var(--tg-theme-text-color);*/
+	background-color: #17212B;
 }
 
 .container {
 	color: white;
 	background: #17212B;
 	width: 100%;
-	height:100%;
+	height: 100vh;
+	display:flex;
+	align-items:center;
 }
 
 .sliderr{
@@ -23,20 +25,23 @@ body {
 
 .inner{
 	max-width: 390px;
-	height: 550px;
+	height: 70%;
 	display: flex;
 	margin:auto;
 	flex-direction: column;
 	justify-content: space-around;
+	transform: scale(100vh);
 }
 
 .inner2{
 	max-width: 390px;
-	height: 550px;
+	height: 70%;
 	display: flex;
+	margin:auto;
+	width: 70%;
 	flex-direction: column;
 	justify-content: space-around;
-	margin:auto;
+	transform: scale(100vh);
 }
 
 .title1, .title2, .title3, .title4{
