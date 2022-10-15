@@ -168,6 +168,12 @@ img{
 	margin-right: 50%;
 	margin-left: 50%;
 }
+.irs-from{
+	font-size: 24px !important;
+}
+.irs-to{
+	font-size: 24px !important;
+}
 /*
 var(--tg-theme-bg-color)
 var(--tg-theme-text-color)

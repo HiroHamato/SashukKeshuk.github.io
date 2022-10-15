@@ -6,7 +6,7 @@ tg.expand();
 btn1 = document.getElementById('btn3');
 btn2 = document.getElementById('btn4');
 
-let cost_from,cost_to;
+let cost_from = 94000,cost_to = 1236000;
 
 $("#slider2").ionRangeSlider({
     type: "double",
