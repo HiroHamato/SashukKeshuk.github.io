@@ -17,12 +17,14 @@ $("#slider2").ionRangeSlider({
     to: 550000,
     step: 1000,
 	postfix: '€',
+	hide_min_max: true,
     onFinish: function (data) {
     		cost_from=data.from;
     		cost_to=data.to;
     },
 
 });
+
 
 $("#slider1").ionRangeSlider({
     type: "double",
@@ -33,6 +35,7 @@ $("#slider1").ionRangeSlider({
     to: 1236000,
     step: 1000,
 	postfix: '€',
+	hide_min_max: true,
     onFinish: function (data) {
     		cost_from=data.from;
     		cost_to=data.to;
