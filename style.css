@@ -161,18 +161,15 @@ img{
 	transition: 0.5s ease all;
 	transform: translate(-100%);
 }
+.irs-from , .irs-to{
+	font-size: 24px !important; 
+}
 #spn{
 	opacity: 0;
 }
 .slider{
 	margin-right: 50%;
 	margin-left: 50%;
-}
-.irs-from{
-	font-size: 24px !important;
-}
-.irs-to{
-	font-size: 24px !important;
 }
 /*
 var(--tg-theme-bg-color)
