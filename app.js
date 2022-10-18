@@ -100,3 +100,7 @@ function SendData(){
 	console.log(data);
 	tg.sendData(data);
 }
+
+function G() {
+  tg.sendData("show");
+}
