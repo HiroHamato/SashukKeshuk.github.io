@@ -7,6 +7,12 @@ tg.expand();
 btn1 = document.getElementById('btn3');
 btn2 = document.getElementById('btn4');
 
+btns1 = document.querySelector('.x1');
+btns2 = document.querySelector('.x2');
+btns3 = document.querySelector('.x3');
+btns4 = document.querySelector('.x4');
+
+
 let cost_from=50000,cost_to=15000000;
 
 $("#slider2").ionRangeSlider({
@@ -51,9 +57,11 @@ let p = $(".inner2").detach();
 
 function ChangeTo2(){
     active = 1;
-    btn1.classList.add("act");
-    btn2.classList.remove("act");
-    //inner1.ClassList.add('move')
+    btns1.classList.add("act");
+    btns3.classList.add("act");
+    btns2.classList.remove("act");
+    btns4.classList.remove("act");
+    console.log(btn1);
     p.fadeOut(1);
     p.appendTo($(".container"));
     p.fadeIn(1500);
@@ -63,8 +71,11 @@ function ChangeTo2(){
 }
 function ChangeTo1(){
     active = 2;
-    btn2.classList.add("act");
-    btn1.classList.remove("act");
+    console.log(btn2);
+    btns2.classList.add("act");
+    btns4.classList.add("act");
+    btns1.classList.remove("act");
+    btns3.classList.remove("act");
     p.fadeOut(1);
     p.appendTo($(".container"));
     p.fadeIn(1500);
