@@ -51,9 +51,8 @@ let p = $(".inner2").detach();
 
 function ChangeTo2(){
     active = 1;
-    btn3.classList.add("act");
-    btn4.classList.remove("act");
-    console.log($('.btn3'));
+    btn1.classList.add("act");
+    btn2.classList.remove("act");
     //inner1.ClassList.add('move')
     p.fadeOut(1);
     p.appendTo($(".container"));
@@ -64,8 +63,8 @@ function ChangeTo2(){
 }
 function ChangeTo1(){
     active = 2;
-    btn4.classList.add("act");
-    btn3.classList.remove("act");
+    btn2.classList.add("act");
+    btn1.classList.remove("act");
     p.fadeOut(1);
     p.appendTo($(".container"));
     p.fadeIn(1500);
