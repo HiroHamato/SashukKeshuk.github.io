@@ -65,7 +65,6 @@ function ChangeTo1(){
 	active = 2;
 	btn4.classList.add("act");
 	btn3.classList.remove("act");
-	$(".btn3").removeClass("act");
 	p.fadeOut(1);
 	p.appendTo($(".container"));
 	p.fadeIn(1500);
