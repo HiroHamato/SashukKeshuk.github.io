@@ -90,7 +90,7 @@ function SendData(){
 	} else {
 		data+='from_the_owner ';
 		data+=cost_from+' '+cost_to+' ';
-		if (document.getElementById("ell1").checked==1) data+='Alanya ';
+		if (document.getElementById("ell1").checked==1) data+='Dubai ';
 		if (document.getElementById("ell2").checked==1) data+='apartment ';
 		if (document.getElementById("ell3").checked==1) data+='villa ';
 		if (document.getElementById("ell4").checked==1) data+='1+1 ';
