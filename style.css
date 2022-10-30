@@ -171,6 +171,9 @@ img{
 	margin-right: 50%;
 	margin-left: 50%;
 }
+.act{
+	background-color: "#395F87" !important;
+}
 /*
 var(--tg-theme-bg-color)
 var(--tg-theme-text-color)
