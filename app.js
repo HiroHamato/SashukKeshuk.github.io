@@ -52,6 +52,7 @@ function ChangeTo2(){
 	active = 1;
 	$(".btn3").addClass("act");
 	$(".btn4").removeClass("act");
+	console.log($('.btn3'));
 	//inner1.ClassList.add('move')
 	p.fadeOut(1);
 	p.appendTo($(".container"));
