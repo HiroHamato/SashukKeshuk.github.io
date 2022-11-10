@@ -113,16 +113,11 @@ async def get(msg: types.Message):
 			if (word == 'townhouse'):
 				Types.append(2)
 
-
-		f = 0
+		rooms_get = ""
 		for j in range(0, len(a)-1):
 			if (a[j][0].isnumeric() and j > 2):
-				if (f == 0):
-					rooms_get = str(a[j])
-					f = 1
-				else:
-					rooms_get += ' '
-					rooms_get += a[j]
+				rooms_get = str(a[j])
+				rooms_get += ' '
 
 		rooms = rooms_get.split(' ')
 		cities = cities_get.split(' ')
