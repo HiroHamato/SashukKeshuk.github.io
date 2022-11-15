@@ -81,7 +81,7 @@ function SendData(){
 	{
 		data+='new_building ';
 		data+=cost_from+' '+cost_to+' ';
-		if (document.getElementById("el1").checked==1) data+='Dubai ';
+		if (document.getElementById("el1").checked==1) data+='Dubai '; else data+='None';
 		if (document.getElementById("el5").checked==1) data+='apartment ';
 		if (document.getElementById("el2").checked==1) data+='townhouse ';
 		if (document.getElementById("el6").checked==1) data+='villa ';
@@ -96,7 +96,7 @@ function SendData(){
 	} else {
 		data+='from_the_owner ';
 		data+=cost_from+' '+cost_to+' ';
-		if (document.getElementById("el1").checked==1) data+='Dubai ';
+		if (document.getElementById("el1").checked==1) data+='Dubai '; else data+='None';
 		if (document.getElementById("el5").checked==1) data+='apartment ';
 		if (document.getElementById("el2").checked==1) data+='townhouse ';
 		if (document.getElementById("el6").checked==1) data+='villa ';
